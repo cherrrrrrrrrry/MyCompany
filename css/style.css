@@ -1,0 +1,395 @@
+/*Основные стили*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.welcome,
+.team,
+.clients,
+.testimonials {
+	background-color: black;
+	color: white;
+}
+
+.wrapper {
+	width: 75%;
+	margin: 0 auto;
+}
+
+h2 {
+	margin: 0;
+	padding-bottom: 10px;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.orange {
+	color: #fcac45;
+	font-weight: 700;
+}
+
+.line {
+	height: 3px;
+	background: #fcac45;
+	position: relative;
+	width: 50px;
+	left: 47.5%;
+	margin-bottom: 75px;
+}
+
+
+/*Шапка*/
+header {
+	display: flex;
+	width: 100%;
+	background: black;
+	padding-bottom: 20px;
+}
+
+header .header-logo {
+	font-weight: 900;
+	float: left;
+	color: white;
+	text-transform: uppercase;
+	font-size: 24px;
+	margin-top: 55px;
+}
+
+.header-logo a {
+	color: white;
+}
+
+header .main-nav {
+	float: right;
+	margin-top: 64px;
+}
+
+.main-nav a {
+	color: white;
+	text-align: center;
+	padding: 12px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-bottom: 3px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+	border-color: #fcac45;
+}
+
+.main-nav .icon {
+	display: none;
+}
+
+
+/*Содержимое страницы*/
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+main h1 {
+	font-size: 44px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 0;
+}
+
+
+/*Блок №1*/
+main .welcome {
+	padding: 250px 0 300px 0;
+	text-align: center;
+}
+
+.welcome .mycompany {
+	color: #fcac45;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.welcome p {
+	color: #999;
+	margin: 0;
+	font-size: 20px;
+}
+
+
+/*Блок №2*/
+main .about {
+	display: flex;
+	padding: 110px 0;
+}
+
+.about h2 {
+	border-bottom: 3px solid #fcac45;
+}
+
+.about-left .mw-100 {
+	min-width: 100%;
+}
+
+.about-right {
+	margin-left: 50px;
+}
+
+.about-right p {
+	color: #6c6c6c;
+	line-height: 28px;
+	margin: 40px 0;
+}
+
+.about .about-right li {
+	line-height: 36px;
+	margin-left: -20px;
+	list-style: url(../img/mark.png);
+}
+
+
+/*Блок №3*/
+main .team {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.team .team-cards {
+	display: flex;
+}
+
+.team-cards .team-card {
+	margin: 0 40px;
+}
+
+.team-card img {
+	width: 50%;
+}
+
+.team-card .name {
+	font-size: 20px;
+	margin-bottom: -15px;
+}
+
+.team-card .name:hover,
+.team-card .name:active {
+	color: #fcac45;
+	transition: .25s;
+	cursor: pointer;
+}
+
+.team-card .position {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.team-card .position:hover,
+.team-card .position:active {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.team-card .about-position {
+	font-size: 14px;
+}
+
+
+/*Блок №4*/
+main .services {
+	padding: 100px 0;
+}
+
+.services h2 {
+	text-align: center;
+}
+
+.services .line {
+	margin-bottom: 50px;
+}
+
+.services .text {
+	padding-bottom: 50px;
+	color: #6c6c6c;
+	text-align: center;
+}
+
+.services .services-cards {
+	display: grid;
+	text-align: center;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 20px;
+}
+
+.services-card img {
+	border-radius: 15%;
+	padding: 10px;
+	border: 3px solid #fcac45;
+}
+
+.services-card h3 {
+	text-transform: uppercase;
+}
+
+.services-card p {
+	color: #6c6c6c;
+	text-align: center;
+}
+
+
+/*Блок №5*/
+main .clients {
+	padding: 100px 0 175px 0;
+	text-align: center;
+}
+
+.clients-list img {
+	margin: 50px 15px 50px 0;
+}
+
+.clients-list img:hover {
+	opacity: 0.4;
+	cursor: pointer;
+	transition: .25s;
+}
+
+
+/*Блок №6*/
+main .portfolio {
+	text-align: center;
+	padding: 100px 0;
+}
+
+.portfolio .text {
+	padding-bottom: 50px;
+	color: #6c6c6c;
+}
+
+.portfolio .gallery .lines {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.line-1 img,
+.line-2 img,
+.line-3 img {
+	width: 20%;
+	margin: 10px;
+}
+
+.line-1 img:hover,
+.line-2 img:hover,
+.line-3 img:hover {
+	opacity: 0.9;
+	cursor: pointer;
+	transition: .25s;
+}
+
+
+/*Блок №7*/
+main .testimonials {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.testimonials .testimonial {
+	text-transform: uppercase;
+	margin: 150px 0;
+}
+
+
+/*Блок №8*/
+main .contacts {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.contacts p {
+	color: #6c6c6c;
+}
+
+form {
+	color: #6c6c6c;
+	text-align: left;
+	margin-top: 50px;
+}
+
+form .form-inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-inner p,
+.form-inner input {
+	display: block;
+}
+
+.form-inner input {
+	width: 360px;
+	font-size: 20px;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #999;
+}
+
+form .red {
+	color: red;
+}
+
+form textarea {
+	resize: none;
+	height: 200px;
+	border: 1px solid #999;
+	width: 99.4%;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+form .send {
+	display: flex;
+	justify-content: flex-end;
+}
+
+input[type="submit"] {
+	width: 125px;
+	background-color: #fcac45;
+	height: 40px;
+	color: white;
+	border: 1px solid #999;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+input[type="submit"]:hover {
+	opacity: 0.9;
+	text-decoration: underline;
+	cursor: pointer;
+	transition: .25s;
+}
+
+footer {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+footer img {
+	cursor: pointer;
+	transition: .25s;
+	margin: 20px 10px;
+}
+
+footer img:hover {
+	opacity: 0.5;
+}
